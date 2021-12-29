@@ -9,3 +9,7 @@ However, in the case of `FollowsOCP.java`, we have extracted all `sending types`
 ## Liskov Substitution Principle
 
 Read this article for more information [LSP](https://www.baeldung.com/java-liskov-substitution-principle)
+
+## Dependency Inversion Principle
+
+This principle says that High-level modules should not depend on low-level modules but rather abstractions. In `FollowsLSP.java`, The `BankingAppWithdrawalService` uses the *general* `WithdrawAbleAccount` *abstract class* and NOT the *concrete* `SavingsAccount` and `CurrentAccount` classes to `withdraw` money from bank accounts. This follows and explains the **Dependency Inversion Principle**.
